@@ -38,8 +38,9 @@ header .site_title > h1 {
 }
 
 .chitan_biography > h1 {
-  font-size: 30px;
+  font-size: 40px;
   text-align: center;
+  font-family: 'Hachi Maru Pop', cursive;
 }
 
 .chitan_biography > h1 .bio {
@@ -57,6 +58,13 @@ header .site_title > h1 {
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  padding-top: 80px;
+}
+
+.chitan_biography > .profile_contents h2 {
+  font-family: 'Hachi Maru Pop', cursive;
+  font-size: 40px;
+  font-weight: bold;
 }
 
 .chitan_biography > .profile_contents > img {
@@ -78,22 +86,48 @@ header .site_title > h1 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  font-family: 'Hachi Maru Pop', cursive;
+  padding: 50px;
 }
 
-.chitan_contents .chitan_image {
+.chitan_contents > h1 {
+  font-size: 35px;
+  padding-bottom: 30px;
+}
+
+.chitan_contents .chitan_box {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
 
-.chitan_contents .chitan_image > img {
+.chitan_contents .chitan_box .chitan_image {
+  margin: 40px;
+}
+
+.chitan_contents .chitan_box .chitan_image > img {
+  height: 250px;
+}
+
+.chitan_contents .chitan_box .chitan_image > p {
+  text-align: center;
+}
+
+.chitan_contents .chitan_box .chitan_image .chitan_bus {
   height: 150px;
+}
+
+.top-view .top-viewImg {
+  height: 70vh;
+  width: 100vw;
+  background-image: url("/assets/img/chitan_top.jpeg");
+  background-size: cover;
 }
 
 /*top-view*/
@@ -105,7 +139,7 @@ header .site_title > h1 {
 }
 
 .my-orange {
-  color: #fecb81;
+  color: #fcc36d;
 }
 
 footer {
