@@ -1,14 +1,27 @@
 
 
 footer{
-    height: 70px;
+    padding: {
+        top:10px;
+        bottom: 10px;
+    };
     background-color: $head_footColor;
     @extend %flex_display;
 
 
     .footer_text{
-        font-style: 9px;
-        
+        font-style: 5px;
+        color: $top_textColor;
+        text-align: center;
+        .copy{
+            padding-top: 10px;
+        }
     }
 }
 
+/*topに戻る*/
+#pagetop {
+    position: fixed;
+    bottom: 50px;
+    right: 30px;
+}

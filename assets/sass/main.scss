@@ -42,6 +42,7 @@
     align-items: center;
     font-family: 'Hachi Maru Pop', cursive;
     padding: 50px;
+
     >h1{
       font-size: 35px;
       padding-bottom: 30px;
@@ -61,10 +62,11 @@
         .chitan_bus{
           height: 150px;
         }
-
       }
     }
-  
+
+  }
+
   
   .top-view{
       .top-viewImg{
@@ -73,15 +75,21 @@
           background-image: url("/assets/img/chitan_top.jpeg");
           background-size: cover;
       }
+    }
 
+/*top-view*/
+.top-view{
+    .top-viewImg{
+        height:70vh;
+        width: 100vw;
+        background-image: url("/assets/img/chitan_top.jpeg");
+        background-size: cover;
     }
 
 }
 
 .my-orange {
-    color: #fecb81;
+    color: #fcc36d;
 }
 
-
 @import "footer";
-
