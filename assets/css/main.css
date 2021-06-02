@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   padding: 0;
   margin: 0;
@@ -25,6 +26,7 @@ header .site_title {
 }
 
 header .site_title > h1 {
+  font-family: 'Hachi Maru Pop', cursive;
   font-size: 40px;
   color: white;
   font-weight: bold;
@@ -94,6 +96,7 @@ header .site_title > h1 {
   height: 150px;
 }
 
+/*top-view*/
 .top-view .top-viewImg {
   height: 70vh;
   width: 100vw;
@@ -106,11 +109,25 @@ header .site_title > h1 {
 }
 
 footer {
-  height: 70px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   background-color: #004fa8;
 }
 
 footer .footer_text {
-  font-style: 9px;
+  font-style: 5px;
+  color: white;
+  text-align: center;
+}
+
+footer .footer_text .copy {
+  padding-top: 10px;
+}
+
+/*topに戻る*/
+#pagetop {
+  position: fixed;
+  bottom: 50px;
+  right: 30px;
 }
 /*# sourceMappingURL=main.css.map */
