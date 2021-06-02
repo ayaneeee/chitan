@@ -1,4 +1,14 @@
+
+
 footer{
     height: 70px;
-    background-color:  rgb(63, 129, 252);
+    background-color: $head_footColor;
+    @extend %flex_display;
+
+
+    .footer_text{
+        font-style: 9px;
+        
+    }
 }
+
