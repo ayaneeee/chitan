@@ -59,10 +59,9 @@
       align-items: center;
       .chitan_image{
         margin: 60px;
-        transition: 2s ;
-        transform: rotateZ( 0deg ) ;
         &:hover{
           transform: rotateZ( 360deg ) ;
+          transition: 2s ;
         }
         >img{
           height: 200px;

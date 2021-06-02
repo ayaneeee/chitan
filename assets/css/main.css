@@ -114,15 +114,13 @@ header .site_title > h1 {
 
 .chitan_contents .chitan_box .chitan_image {
   margin: 60px;
-  -webkit-transition: 2s;
-  transition: 2s;
-  -webkit-transform: rotateZ(0deg);
-          transform: rotateZ(0deg);
 }
 
 .chitan_contents .chitan_box .chitan_image:hover {
   -webkit-transform: rotateZ(360deg);
           transform: rotateZ(360deg);
+  -webkit-transition: 2s;
+  transition: 2s;
 }
 
 .chitan_contents .chitan_box .chitan_image > img {
