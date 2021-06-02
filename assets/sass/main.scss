@@ -1,4 +1,49 @@
 @import "header";
+
+
+.chitan_biography{
+  padding: 50px;
+  background-color: #f8e352;
+  >h1{
+    font-size: 30px;
+    text-align: center;
+    .bio{
+      font-size: 10px;
+      margin: 0;
+    }
+    .profile{
+      margin: 0;
+    }
+  }
+  >.profile_contents{
+    display: flex;
+    justify-content: space-around;
+    >img{
+      height: 350px;
+    }
+
+  }
+}
+  .chitan_contents{
+    background-color:#f9ebd1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .chitan_image{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      >img{
+        height: 150px;
+      }
+    }
+
+  }
+  
+
+
 .top-view{
     .top-viewImg{
         height:70vh;
@@ -14,3 +59,4 @@
 
 
 @import "footer";
+
