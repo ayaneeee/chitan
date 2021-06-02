@@ -1,16 +1,53 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+header, footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 header {
-  height: 60px;
-  background-color: #3f81fc;
+  height: 100px;
+  background-color: #004fa8;
 }
 
 header .site_title {
-  font-size: 40px;
+  text-align: center;
+}
+
+header .site_title > h1 {
+  font-family: 'Hachi Maru Pop', cursive;
+  font-size: 50px;
   color: white;
   font-weight: bold;
 }
 
+.top-view .top-viewImg {
+  height: 70vh;
+  width: 100vw;
+  background-image: url("/assets/img/chitan_top.jpeg");
+  background-size: cover;
+}
+
+.my-orange {
+  color: #fecb81;
+}
+
 footer {
   height: 70px;
-  background-color: #3f81fc;
+  background-color: #004fa8;
+}
+
+footer .footer_text {
+  font-style: 9px;
 }
 /*# sourceMappingURL=main.css.map */

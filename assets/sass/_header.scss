@@ -1,12 +1,32 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+%flex_display{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+$top_textColor:white;
+$head_footColor:#004fa8;
+
 header{
-    height: 60px;
-    background-color: rgb(63, 129, 252);
+    height: 100px;
+    background-color: $head_footColor;
+    @extend %flex_display;
 
     .site_title{
-        font-size: 40px;
-        color: white;
-        font-weight: bold;
+        text-align: center;
+
+        >h1{
+            font-family: 'Hachi Maru Pop', cursive;
+            font-size: 50px;
+            color: $top_textColor;
+            font-weight: bold;
+        }
     }
 }
+
 
 
