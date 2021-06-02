@@ -39,6 +39,7 @@ header .site_title > h1 {
 .chitan_biography > h1 {
   font-size: 30px;
   text-align: center;
+  font-family: 'Hachi Maru Pop', cursive;
 }
 
 .chitan_biography > h1 .bio {
@@ -56,6 +57,11 @@ header .site_title > h1 {
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+}
+
+.chitan_biography > .profile_contents h2 {
+  font-family: 'Hachi Maru Pop', cursive;
+  font-size: 30px;
 }
 
 .chitan_biography > .profile_contents > img {
@@ -77,6 +83,8 @@ header .site_title > h1 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  font-family: 'Hachi Maru Pop', cursive;
+  padding: 50px;
 }
 
 .chitan_contents .chitan_image {
@@ -92,7 +100,8 @@ header .site_title > h1 {
 }
 
 .chitan_contents .chitan_image > img {
-  height: 150px;
+  height: 250px;
+  margin: 0 50px;
 }
 
 .top-view .top-viewImg {
