@@ -4,7 +4,8 @@
 .chitan_biography{
   padding: 50px;
   background-color: #f8e352;
-  
+  background-image: url(../img/reaction31.png);
+  background-size: 120px;
 
   >h1{
     font-size: 40px;
@@ -52,9 +53,14 @@
       justify-content: space-between;
       align-items: center;
       .chitan_image{
-        margin: 40px;
+        margin: 60px;
+        transition: 2s ;
+        transform: rotateZ( 0deg ) ;
+        &:hover{
+          transform: rotateZ( 360deg ) ;
+        }
         >img{
-          height: 250px;
+          height: 200px;
         }
         >p{
           text-align: center;
@@ -62,6 +68,7 @@
         .chitan_bus{
           height: 150px;
         }
+        
       }
     }
 

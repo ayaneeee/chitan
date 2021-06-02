@@ -35,6 +35,8 @@ header .site_title > h1 {
 .chitan_biography {
   padding: 50px;
   background-color: #f8e352;
+  background-image: url(../img/reaction31.png);
+  background-size: 120px;
 }
 
 .chitan_biography > h1 {
@@ -108,11 +110,20 @@ header .site_title > h1 {
 }
 
 .chitan_contents .chitan_box .chitan_image {
-  margin: 40px;
+  margin: 60px;
+  -webkit-transition: 2s;
+  transition: 2s;
+  -webkit-transform: rotateZ(0deg);
+          transform: rotateZ(0deg);
+}
+
+.chitan_contents .chitan_box .chitan_image:hover {
+  -webkit-transform: rotateZ(360deg);
+          transform: rotateZ(360deg);
 }
 
 .chitan_contents .chitan_box .chitan_image > img {
-  height: 250px;
+  height: 200px;
 }
 
 .chitan_contents .chitan_box .chitan_image > p {
