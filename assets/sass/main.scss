@@ -5,18 +5,21 @@
   padding: 50px;
   background-color: #f8e352;
   background-image: url(../img/reaction31.png);
-  background-size: 120px;
+  background-size: 620px;
 
   >h1{
     font-size: 40px;
     text-align: center;
     font-family: 'Hachi Maru Pop', cursive;
+    
     .bio{
       font-size: 10px;
       margin: 0;
+      font-weight:800;
     }
     .profile{
       margin: 0;
+      font-weight:800;
     }
   }
   >.profile_contents{
@@ -36,7 +39,7 @@
   // section2
 }
   .chitan_contents{
-    background-color:#f9ebd1;
+    background-color:#afd0ef;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -47,6 +50,8 @@
     >h1{
       font-size: 35px;
       padding-bottom: 30px;
+      text-shadow: 2px 2px 1px #fff;
+
     }
     .chitan_box{
       display: flex;
