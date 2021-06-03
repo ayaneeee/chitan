@@ -152,7 +152,7 @@ header .header_right #nav-toggle #hamburger-nav.active span:nth-of-type(3) {
 .chitan_biography {
   padding: 50px;
   background-color: #f8e352;
-  background-image: url(../img/reaction31.png);
+  background-image: url(../img/chitan_top.jpeg);
   background-size: 620px;
 }
 
@@ -268,7 +268,7 @@ header .header_right #nav-toggle #hamburger-nav.active span:nth-of-type(3) {
 .top-view .top-viewImg {
   height: 70vh;
   width: 100%;
-  background-image: url("/assets/img/chitan_top.jpeg");
+  background-image: url("../img/chitan_top.jpeg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
