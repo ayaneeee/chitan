@@ -8,9 +8,6 @@ header, footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -19,6 +16,9 @@ header, footer {
 header {
   height: 100px;
   background-color: #004fa8;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 header .site_title {
@@ -30,6 +30,123 @@ header .site_title > h1 {
   font-size: 40px;
   color: white;
   font-weight: bold;
+}
+
+header .header_right #nav-toggle {
+  color: wheat;
+  z-index: 1000;
+  position: fixed;
+  top: 30px;
+  right: 25px;
+  height: 32px;
+  cursor: pointer;
+  /* :checked */
+}
+
+header .header_right #nav-toggle .btn-trigger {
+  position: relative;
+  width: 50px;
+  height: 44px;
+  cursor: pointer;
+}
+
+header .header_right #nav-toggle .btn-trigger span {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background-color: #fff;
+  border-radius: 4px;
+}
+
+header .header_right #nav-toggle .btn-trigger, header .header_right #nav-toggle .btn-trigger span {
+  display: inline-block;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+header .header_right #nav-toggle .btn-trigger span:nth-of-type(1) {
+  top: 0;
+}
+
+header .header_right #nav-toggle .btn-trigger span:nth-of-type(2) {
+  top: 20px;
+}
+
+header .header_right #nav-toggle .btn-trigger span:nth-of-type(3) {
+  bottom: 0;
+}
+
+header .header_right #nav-toggle #nav-toggle .hamberger {
+  position: relative;
+  width: 50px;
+}
+
+header .header_right #nav-toggle #hamburger-nav.active {
+  -webkit-transform: rotate(360deg);
+  transform: rotate(360deg);
+}
+
+header .header_right #nav-toggle #hamburger-nav.active span:nth-of-type(1) {
+  -webkit-transform: translateY(20px) rotate(-45deg);
+  transform: translateY(20px) rotate(-45deg);
+}
+
+header .header_right #nav-toggle #hamburger-nav.active span:nth-of-type(2) {
+  -webkit-transform: translateY(0) rotate(45deg);
+  transform: translateY(0) rotate(45deg);
+}
+
+header .header_right #nav-toggle #hamburger-nav.active span:nth-of-type(3) {
+  opacity: 0;
+}
+
+#gloval-nav {
+  background-color: #afd0ef;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 990;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 60px;
+  padding-left: 100px;
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+  -webkit-transition: -webkit-transform 1s cubic-bezier(0.215, 0.61, 0.355, 1);
+  transition: -webkit-transform 1s cubic-bezier(0.215, 0.61, 0.355, 1);
+  transition: transform 1s cubic-bezier(0.215, 0.61, 0.355, 1);
+  transition: transform 1s cubic-bezier(0.215, 0.61, 0.355, 1), -webkit-transform 1s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+#gloval-nav a {
+  text-decoration: none;
+  color: black;
+}
+
+#gloval-nav a :hover {
+  text-decoration: underline;
+}
+
+.open #gloval-nav {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
 }
 
 .chitan_biography {
@@ -135,18 +252,25 @@ header .site_title > h1 {
   height: 150px;
 }
 
-.top-view .top-viewImg {
-  height: 70vh;
-  width: 100vw;
-  background-image: url("/assets/img/chitan_top.jpeg");
-  background-size: cover;
+/*top-view*/
+.top-view {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-/*top-view*/
 .top-view .top-viewImg {
   height: 70vh;
-  width: 100vw;
+  width: 100%;
   background-image: url("/assets/img/chitan_top.jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
   background-size: cover;
 }
 
@@ -158,6 +282,9 @@ footer {
   padding-top: 10px;
   padding-bottom: 10px;
   background-color: #004fa8;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 footer .footer_text {

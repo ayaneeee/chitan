@@ -78,25 +78,19 @@
 
   }
 
-  
-  .top-view{
-      .top-viewImg{
-          height:70vh;
-          width: 100vw;
-          background-image: url("/assets/img/chitan_top.jpeg");
-          background-size: cover;
-      }
-    }
-
 /*top-view*/
 .top-view{
+  display: flex;
+  justify-content: center;
+  align-items: center;
     .top-viewImg{
-        height:70vh;
-        width: 100vw;
-        background-image: url("/assets/img/chitan_top.jpeg");
-        background-size: cover;
+      height: 70vh;
+      width: 100%;
+      background-image: url("/assets/img/chitan_top.jpeg");
+      background-position: center;
+      background-repeat:no-repeat;
+      background-size: cover;
     }
-
 }
 
 .my-orange {

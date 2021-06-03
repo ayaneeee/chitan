@@ -19,3 +19,21 @@ $('#pagetop').click(function () {
 	return false;
 });
 
+// checkactionハンバーガーアニメーション
+$(function(){
+	$('.btn-trigger').on('click', function() {
+		$(this).toggleClass('active');
+		return false;
+		});
+	});
+	
+	// nav　スライド
+	$(function() {
+		$(function () {
+			$('#hamburger-nav').on('click', function() {
+				$('body').toggleClass('open');
+			});
+		});
+	});
+	
+
